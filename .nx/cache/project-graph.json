@@ -1,21 +1,14 @@
 {
   "nodes": {
-    "a": {
-      "name": "a",
+    "b": {
+      "name": "b",
       "type": "lib",
       "data": {
-        "root": "packages/a",
-        "sourceRoot": "packages/a",
-        "name": "a",
+        "root": "packages/b",
+        "sourceRoot": "packages/b",
+        "name": "b",
         "projectType": "library",
         "targets": {
-          "start": {
-            "executor": "nx:run-script",
-            "options": {
-              "script": "start"
-            },
-            "configurations": {}
-          },
           "build": {
             "dependsOn": [
               "^build"
@@ -49,15 +42,22 @@
         "tags": []
       }
     },
-    "b": {
-      "name": "b",
+    "a": {
+      "name": "a",
       "type": "lib",
       "data": {
-        "root": "packages/b",
-        "sourceRoot": "packages/b",
-        "name": "b",
+        "root": "packages/a",
+        "sourceRoot": "packages/a",
+        "name": "a",
         "projectType": "library",
         "targets": {
+          "start": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start"
+            },
+            "configurations": {}
+          },
           "build": {
             "dependsOn": [
               "^build"
@@ -5081,17 +5081,17 @@
     }
   },
   "dependencies": {
-    "a": [
-      {
-        "source": "a",
-        "target": "b",
-        "type": "static"
-      }
-    ],
     "b": [
       {
         "source": "b",
         "target": "npm:axios",
+        "type": "static"
+      }
+    ],
+    "a": [
+      {
+        "source": "a",
+        "target": "b",
         "type": "static"
       }
     ],
