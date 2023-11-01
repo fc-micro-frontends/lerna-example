@@ -1,0 +1,114 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.2",
+  "deps": {
+    "nx": "^17.0.2",
+    "lerna": "^7.4.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "8587836968507943632"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "15674702556438645746"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "18342512813733627007"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "10253758891114366255"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "11778196064354216123"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "15816785189586496462"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "10010256335013790573"
+      },
+      {
+        "file": "nx.json",
+        "hash": "744807924235102126"
+      },
+      {
+        "file": "output.json",
+        "hash": "13633521214996099830"
+      },
+      {
+        "file": "package.json",
+        "hash": "9861150775905820235"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "13121016114685892066"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "414265049992887245"
+      }
+    ],
+    "projectFileMap": {
+      "b": [
+        {
+          "file": "packages/b/README.md",
+          "hash": "7896783350214521062"
+        },
+        {
+          "file": "packages/b/__tests__/b.test.js",
+          "hash": "17878367571249385278"
+        },
+        {
+          "file": "packages/b/lib/b.js",
+          "hash": "15746072181076635066"
+        },
+        {
+          "file": "packages/b/package.json",
+          "hash": "2187920018473292901",
+          "deps": [
+            "npm:axios"
+          ]
+        }
+      ],
+      "a": [
+        {
+          "file": "packages/a/README.md",
+          "hash": "17002001921416591732"
+        },
+        {
+          "file": "packages/a/__tests__/a.test.js",
+          "hash": "6375740343908548760"
+        },
+        {
+          "file": "packages/a/lib/a.js",
+          "hash": "1312032867556409687"
+        },
+        {
+          "file": "packages/a/main.js",
+          "hash": "12144714556669780262"
+        },
+        {
+          "file": "packages/a/package.json",
+          "hash": "9415640244006549256",
+          "deps": [
+            "b"
+          ]
+        }
+      ]
+    }
+  }
+}
